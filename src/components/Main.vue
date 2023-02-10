@@ -23,7 +23,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  font-size: 50px;
+  font-size: 40px;
   width: 100;
   height: 80px;
   display: flex;
