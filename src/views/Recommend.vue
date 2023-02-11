@@ -1,22 +1,26 @@
 <template>
   <div class="contents-wrapper">
     <div class="hl">
-      <h1 class="title">Instagram Recommendation</h1>
+      <div class="header">
+        <h1 class="title">Instagram Recommendation</h1>
+        <div>
+          <button class="back"><router-link to="main">back</router-link></button>
+        </div>
+      </div>
+      <div class="border-bottom"></div>
       <h5 class="subtitle">
         서로 다른 4개의 스타일을 가지고 있는 인스타그램 피드 예시들을 클릭하면서 새롭게 정렬되는
         쇼핑몰 아이템들을 확인해보세요.
       </h5>
+      <div class="border-bottom"></div>
     </div>
     <div class="main-container">
       <div class="section-1">
         <!-- 왼쪽 인플루언서 영역 -->
-        {{ num }}
         <div class="subsection">
           <!-- 윗줄 -->
           <div v-for="(value, index) in item_list" :key="index">
-            <button @click="showResults(index)">
-              <img class="influencer_img" :src="value.insta" />
-            </button>
+            <img class="influencer_img" @click="showResults(index)" :src="value.insta" />
           </div>
         </div>
       </div>
@@ -24,7 +28,7 @@
       <div class="section-2">
         <div class="item-wrapper">
           <div class="item_img_wrapper" v-for="(value, index) in item_list[num].item" :key="index">
-            <img class="imem_img" :src="value" />
+            <img class="item_img" :src="value" />
           </div>
         </div>
       </div>
@@ -53,6 +57,8 @@ export default {
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0004.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
           ],
         },
         {
@@ -65,6 +71,8 @@ export default {
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0010.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0011.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0012.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
           ],
         },
         {
@@ -77,6 +85,8 @@ export default {
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0016.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0017.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0018.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
           ],
         },
         {
@@ -89,6 +99,8 @@ export default {
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0022.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0023.jpg",
             "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0024.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
+            "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
           ],
         },
       ],
@@ -128,7 +140,6 @@ export default {
 .hl {
   margin-top: 0;
   border-top: 2px solid #ff5a00;
-  border-bottom: 2px solid#ff5a00;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -137,10 +148,15 @@ export default {
   text-align: center;
   padding: 10px;
 }
+.header {
+  display: flex;
+}
 
+.border-bottom {
+  border-bottom: 2px solid#ff5a00;
+}
 .title {
   color: #ff5a00;
-  border-bottom: 2px solid #ff5a00;
   /* border-spacing: 25px; */
   width: 100%;
   margin-bottom: 20px;
@@ -149,7 +165,7 @@ export default {
 }
 .subtitle {
   color: #ff5a00;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 15px;
   /* width:; */
@@ -181,7 +197,7 @@ export default {
 .item-wrapper {
   width: 100%;
   padding: 20px;
-  border: solid;
+  /* border: solid; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -191,12 +207,19 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid;
+  /* border: solid; */
   width: 25%;
 }
 
-.imem_img {
+.item_img {
+  border-radius: 10px;
   width: 225px;
   height: 300px;
+}
+
+.back {
+  background-color: #f5eede;
+  border: none;
+  text-decoration: none;
 }
 </style>
