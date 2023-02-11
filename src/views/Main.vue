@@ -45,4 +45,8 @@ export default {};
   width: 500px;
   height: 750px;
 }
+
+.main_image:hover {
+  border: 5px solid #ff5a00;
+}
 </style>
