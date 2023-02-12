@@ -3,10 +3,10 @@
     <div class="title">MOS</div>
     <div class="link-wrapper">
       <router-link to="/segment">
-        <img src="../assets/instagram_recommendation.png" class="main_image"
+        <img src="../assets/instance_segmentation.jpg" class="main_image"
       /></router-link>
       <router-link to="/recommend"
-        ><img src="../assets/instance_segmentation.jpg" class="main_image"
+        ><img src="../assets/instagram_recommendation.png" class="main_image"
       /></router-link>
     </div>
   </div>
