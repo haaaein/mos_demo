@@ -3,10 +3,10 @@
     <div class="title">MOS</div>
     <div class="link-wrapper">
       <router-link to="/segment">
-        <img src="../assets/main_image1.png" class="main_image"
+        <img src="../assets/instagram_recommendation.png" class="main_image"
       /></router-link>
       <router-link to="/recommend"
-        ><img src="../assets/main_image2.png" class="main_image"
+        ><img src="../assets/instance_segmentation.jpg" class="main_image"
       /></router-link>
     </div>
   </div>
@@ -42,8 +42,9 @@ export default {};
 }
 
 .main_image {
-  width: 500px;
-  height: 750px;
+  width: 460px;
+  height: 690px;
+  margin-left: 20px;
 }
 
 .main_image:hover {

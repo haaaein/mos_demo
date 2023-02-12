@@ -8,10 +8,7 @@
         </div>
       </div>
       <div class="border-bottom"></div>
-      <h5 class="subtitle">
-        서로 다른 4개의 스타일을 가지고 있는 인스타그램 피드 예시들을 클릭하면서 새롭게 정렬되는
-        쇼핑몰 아이템들을 확인해보세요.
-      </h5>
+      <h5 class="subtitle">사진들을 클릭해서 MOS의 자동 태깅 기술을 체험해보세요.</h5>
       <div class="border-bottom"></div>
     </div>
     <div class="main-container">
