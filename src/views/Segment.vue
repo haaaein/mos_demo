@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="border-bottom"></div>
-      <h5 class="subtitle">사진들을 클릭해서 MOS의 자동 태깅 기술을 체험해보세요.</h5>
+      <h5 class="subtitle">사진을 클릭해서 MOS의 자동 태깅 기술을 체험해보세요.</h5>
       <div class="border-bottom"></div>
     </div>
     <div class="main-container">
@@ -87,6 +87,7 @@ export default {
   background-color: #f5eede;
   min-height: 1000px;
   width: 100%;
+  /* height: 100vh; */
 }
 
 .header {

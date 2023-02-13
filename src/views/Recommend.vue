@@ -121,6 +121,7 @@ export default {
   background-color: #f5eede;
   min-height: 1000px;
   width: 100%;
+  /* height: 100vh; */
 }
 
 .button_influencer {
