@@ -34,40 +34,40 @@ export default {
       num: 0,
       img_url: [
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0001.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0001.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0011.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0011.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0002.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0002.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0020.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0020.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0003.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0003.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0050.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0050.jpg",
         },
         {
           image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0004.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0004.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0004.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0005.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0100.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0100.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0006.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0122.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0122.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0007.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0007.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0123.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0123.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0008.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0008.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0111.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0111.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0009.jpg",
-          segment: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0009.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0116.jpg",
+          segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0116.jpg",
         },
       ],
     };
@@ -167,6 +167,7 @@ export default {
 .seg-image {
   width: 600px;
   height: 800px;
+  border-radius: 20px;
 }
 
 .back {
