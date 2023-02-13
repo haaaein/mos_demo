@@ -138,6 +138,10 @@ export default {
   height: 330px;
   border-radius: 15px;
 }
+
+.influencer_img:hover {
+  opacity: 0.4;
+}
 .hl {
   margin-top: 0;
   border-top: 2px solid #ff5a00;

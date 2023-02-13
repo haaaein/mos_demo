@@ -158,6 +158,10 @@ export default {
   height: 200px;
 }
 
+.ex-image:hover {
+  opacity: 0.4;
+}
+
 .section-2 {
   /* border: solid; */
   display: flex;
