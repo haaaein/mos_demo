@@ -50,7 +50,7 @@ html {
 .main_image {
   width: 460px;
   height: 690px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .main_image:hover {
