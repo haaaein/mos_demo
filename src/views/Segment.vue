@@ -1,11 +1,12 @@
 <template>
   <div class="contents-wrapper">
+    <div>
+      <button class="back"><router-link to="main">back</router-link></button>
+    </div>
     <div class="hl">
+      <div class="border-top"></div>
       <div class="header">
         <h1 class="title">Image Segmentation</h1>
-        <div>
-          <button class="back"><router-link to="main">back</router-link></button>
-        </div>
       </div>
       <div class="border-bottom"></div>
       <h5 class="subtitle">사진을 클릭해서 MOS의 자동 태깅 기술을 체험해보세요.</h5>
@@ -34,19 +35,19 @@ export default {
       num: 0,
       img_url: [
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0011.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0091.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0011.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0020.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0090.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0020.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0050.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0088.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0050.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0004.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0080.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0004.jpg",
         },
         {
@@ -54,11 +55,11 @@ export default {
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0100.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0122.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0077.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0122.jpg",
         },
         {
-          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0123.jpg",
+          image: "https://mos-test-products.s3.ap-northeast-2.amazonaws.com/images/P0105.jpg",
           segment: "https://astlyi.s3.ap-northeast-2.amazonaws.com/influencer/P0123.jpg",
         },
         {
@@ -85,7 +86,7 @@ export default {
 <style scoped>
 .contents-wrapper {
   background-color: #f5eede;
-  min-height: 1000px;
+  min-height: 1200px;
   width: 100%;
   /* height: 100vh; */
 }
@@ -96,7 +97,6 @@ export default {
 
 .hl {
   margin-top: 0;
-  border-top: 2px solid #ff5a00;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -105,9 +105,15 @@ export default {
   text-align: center;
   padding: 10px;
 }
+
+.border-top {
+  border-top: 2px solid#ff5a00;
+}
+
 .border-bottom {
   border-bottom: 2px solid#ff5a00;
 }
+
 .title {
   color: #ff5a00;
   /* border-bottom: 2px solid #ff5a00; */
@@ -179,5 +185,12 @@ export default {
   background-color: #f5eede;
   border: none;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: right;
 }
 </style>

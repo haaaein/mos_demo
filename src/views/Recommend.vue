@@ -1,11 +1,12 @@
 <template>
   <div class="contents-wrapper">
+    <div>
+      <button class="back"><router-link to="main">back</router-link></button>
+    </div>
     <div class="hl">
+      <div class="border-top"></div>
       <div class="header">
         <h1 class="title">Instagram Recommendation</h1>
-        <div>
-          <button class="back"><router-link to="main">back</router-link></button>
-        </div>
       </div>
       <div class="border-bottom"></div>
       <h5 class="subtitle">
@@ -144,7 +145,6 @@ export default {
 }
 .hl {
   margin-top: 0;
-  border-top: 2px solid #ff5a00;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -155,6 +155,10 @@ export default {
 }
 .header {
   display: flex;
+}
+
+.border-top {
+  border-top: 2px solid#ff5a00;
 }
 
 .border-bottom {
@@ -226,5 +230,13 @@ export default {
   background-color: #f5eede;
   border: none;
   text-decoration: none;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: right;
 }
 </style>
