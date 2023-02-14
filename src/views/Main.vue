@@ -1,13 +1,11 @@
 <template>
-  <div class="content-wrapper">
-    <div class="title">MOS</div>
-    <div class="link-wrapper">
-      <router-link to="/segment">
-        <img src="../assets/instance_segmentation.jpg" class="main_image"
-      /></router-link>
-      <router-link to="/recommend"
-        ><img src="../assets/instagram_recommendation.png" class="main_image"
-      /></router-link>
+  <div>
+    <div class="content-wrapper">
+      <div class="title">MOS</div>
+      <div class="link-wrapper">
+        <router-link to="/segment"> <img src="../assets/instance_segmentation.jpg" class="main_image" /></router-link>
+        <router-link to="/recommend"><img src="../assets/instagram_recommendation.png" class="main_image" /></router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -18,9 +16,17 @@ export default {};
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+html {
+  background: no-repeat center fixed;
+  background-size: cover;
+  background-color: black;
+}
+
 .content-wrapper {
+  /* background-size: cover; */
   background-color: black;
   min-height: 1000px;
+  min-width: 100%;
   align-content: center;
   text-align: center;
   align-items: center;
