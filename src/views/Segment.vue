@@ -1,7 +1,7 @@
 <template>
   <div class="contents-wrapper">
     <div>
-      <button class="back"><router-link to="main">back</router-link></button>
+      <button class="back"><router-link to="/">back</router-link></button>
     </div>
     <div class="hl">
       <div class="border-top"></div>
@@ -189,8 +189,9 @@ export default {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #ff5a00;
   font-size: 15px;
   text-align: right;
+  font-weight: bold;
 }
 </style>

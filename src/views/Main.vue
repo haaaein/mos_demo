@@ -1,10 +1,17 @@
 <template>
+  <head>
+    <link rel="icon" type="images/png" href="../assests/LOGO_1.png" />
+  </head>
   <div>
     <div class="content-wrapper">
-      <div class="title">MOS</div>
+      <div class="title"><img src="../assets/LOGO_white.png" class="main_logo" /></div>
       <div class="link-wrapper">
-        <router-link to="/segment"> <img src="../assets/instance_segmentation.jpg" class="main_image" /></router-link>
-        <router-link to="/recommend"><img src="../assets/instagram_recommendation.png" class="main_image" /></router-link>
+        <router-link to="/segment">
+          <img src="../assets/instance_segmentation.jpg" class="main_image"
+        /></router-link>
+        <router-link to="/recommend"
+          ><img src="../assets/instagram_recommendation.png" class="main_image"
+        /></router-link>
       </div>
     </div>
   </div>
@@ -20,6 +27,10 @@ html {
   background: no-repeat center fixed;
   background-size: cover;
   background-color: black;
+}
+
+.main_logo {
+  height: 80px;
 }
 
 .content-wrapper {
@@ -50,7 +61,9 @@ html {
 .main_image {
   width: 460px;
   height: 690px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 5px solid transparent;
 }
 
 .main_image:hover {
