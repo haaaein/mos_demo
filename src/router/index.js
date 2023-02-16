@@ -12,7 +12,7 @@ const routes = [
         component: () => import('../views/Segment'),
     },
     {
-        path: '/main',
+        path: '/',
         name: 'main',
         component: () => import('../views/Main'),
     }
